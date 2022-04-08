@@ -1,5 +1,5 @@
 "use strict";
-
+(function () {
 /**
  * TODO:
  * Create a function called 'sayHello' that takes a parameter 'name'.
@@ -9,9 +9,10 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
 function sayHello(name) {
-    return name;
-
+    return 'Hello ' + (name) ;
 }
+
+console.log(sayHello('Nia'));
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -19,6 +20,10 @@ function sayHello(name) {
  *
  * console.log 'helloMessage' to check your work
  */
+var helloMessage = sayHello("name")
+
+console.log(helloMessage);
+// call the function = saying the name of the function and passing something intp/through the ()
 
 /**
  * TODO:
@@ -26,6 +31,10 @@ function sayHello(name) {
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
+
+var myName = 'Nia'
+
+console.log(sayHello(myName));
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -48,6 +57,12 @@ var random = Math.floor((Math.random() * 3) + 1);
  * different result everytime you refresh the page if you are using the random
  * number)
  */
+function isTwo(number) {
+    return number == 2;
+}
+
+console.log(isTwo(random));
+console.log(isTwo(random), "Random number is:", random);
 
 /**
  * TODO:
@@ -60,6 +75,11 @@ var random = Math.floor((Math.random() * 3) + 1);
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
+function calculateTip(tip, total) {
+    return (tip * total);
+}
+
+console.log(calculateTip(0.25, 25.50));
 
 /**
  * TODO:
@@ -67,6 +87,10 @@ var random = Math.floor((Math.random() * 3) + 1);
  * prompt the user for the bill total and a percentage they would like to tip,
  * then display the dollar amount they should tip
  */
+var bill = parseFloat(prompt("What is the total of your bill?"));
+var tip = parseFloat(prompt("What percentage would you like to tip?"));
+
+alert(calculateTip(tip, bill));
 
 /**
  * TODO:
@@ -82,3 +106,10 @@ var random = Math.floor((Math.random() * 3) + 1);
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+    function applyDiscount(orgPrice, discountPercent) {
+        return orgPrice - (orgPrice * discountPercent);
+
+}
+    console.log(applyDiscount(100, .2));
+
+})();
