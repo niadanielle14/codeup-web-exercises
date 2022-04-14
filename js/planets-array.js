@@ -32,9 +32,9 @@
 //console.log('Removing "Pluto" from the end of the planets array.');
 //     console.log(planets);
 
-    // planets.slice(1,3);
+    // p
     // console.log('Finding and logging the index of "Earth" in the planets array.');
-    // console.log(planets);
+    // console.log(planets.indexOf("Earth"));
 
 // planets.reverse();
 //     // console.log("Reversing the order of the planets array.");
