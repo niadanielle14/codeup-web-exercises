@@ -25,13 +25,11 @@
     function analyzeColor(color) {
 
     if (color === "red") {
-        return ("roses are " + color);
-
+        return "roses are red";
     } else if (color === "blue") {
-        return("the ski is " + color);
-        // code here gets executed if condition evaluates to true
-    } else {
-        return (color + "is one of the colors of the rainbow also.")
+        return "the ski is blue";
+    } else if (color === "cyan") {
+        return "cyan is the color of the sea."
         // code here gets executed if condition evaluates to false
     }
 }
@@ -57,7 +55,11 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
 function analyzeColor(color) {
     switch (color) {
         case "red":
-            return ""
+            return "Blood is red";
+        case "blue":
+            return "The sky is blue";
+        case "cyan":
+            return "The color of the sea is cyan."
     }
 }
 /**
@@ -66,6 +68,8 @@ function analyzeColor(color) {
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+var userColor = prompt("Please enter a color");
+console.log(analyzeColor(userColor.toLowerCase()));
 
 /* ########################################################################## */
 
@@ -88,7 +92,21 @@ function analyzeColor(color) {
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-
+function calculateTotal(luckyNumber, total){
+    if (luckyNumber === 0) {
+        return total;
+    } else if (luckyNumber === 1){
+        return total * .9;
+    } else if (luckyNumber === 2) {
+        return total * .75;
+    } else if (luckyNumber === 3) {
+        return total * .65;
+    } else if (luckyNumber === 4) {
+        return total * .5;
+    } else if (luckyNumber === 5) {
+        return 0;
+    }
+}
 /**
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -98,8 +116,11 @@ function analyzeColor(color) {
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
-
+var luckyNumber = Math.floor(Math.random() * 6);
+var userBill = prompt("Please enter your total bill");
+alert("Your lucky number was " + luckyNumber + "\n" +
+      "Your price before discount was $" + userBill + "\n" +
+      "Your price after discount is $" + (calculateTotal(luckyNumber, userBill)));
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
