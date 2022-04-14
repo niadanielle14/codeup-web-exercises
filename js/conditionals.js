@@ -35,8 +35,6 @@
         // code here gets executed if condition evaluates to false
     }
 }
-    var declaredColor = prompt("Please choose a color: /n1. red /n2. blue");
-console.log(analyzeColor(declaredColor));
 
 
 // Don't change the next twoq lines!
@@ -51,12 +49,17 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
-
+// console.log(analyzeColor(randomColor));
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
-
+function analyzeColor(color) {
+    switch (color) {
+        case "red":
+            return ""
+    }
+}
 /**
  * TODO:
  * Prompt the user for a color when the page loads, and pass the input from the
