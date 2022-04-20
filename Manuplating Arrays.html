@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <title>Array Manipulation Lecture</title>
+</head>
+<body>
+<main class="container">
+    <h1>Array Manipulation Lecture</h1>
+</main>
+<script>
+    "use strict";
+
+    // ============================= Array Iteration
+
+    // var pies = [
+    //     "apple",
+    //     "cherry",
+    //     "key lime",
+    //     "huckleberry",
+    //     "rhubarb"
+    // ];
+
+    // for loop
+
+    // forEach loop
+// function getTastyPies(pies) {
+//     var tastyPies = [];
+//     pies.forEach(function(pie) {
+//         if (pie.startsWith("tasty")) {
+//             tastyPies.push(pie);
+//         }
+//     }
+// }
+
+    // ============================= Adding and Removing Elements
+
+    /*
+
+        // The following array methods change the original array value!
+
+        someArray.shift()   = removes first element
+        someArray.unshift() = adds new first element
+        someArray.pop()     = removes last element
+        someArray.push()    = adds new last element
+
+     */
+
+    // var pies = [
+    //     "apple",
+    //     "cherry",
+    //     "key lime",
+    //     "huckleberry",
+    //     "rhubarb"
+    // ];
+
+    // array iteration
+
+    // push
+
+    // pop
+
+    // shift
+// var removeFirstEmelemt = pies.shift ();
+// console.log(pies)
+//     // unshift
+// var addFirstElement = pies.unshift("always need something here to add, can also add multiple items");
+// console.log(pies);
+
+
+    // ============================= Slicing
+
+    // RETURNS A SUB ARRAY COPY OF THE ORIGINAL
+
+    /* SYNTAX
+
+       someArray.slice(startingIndex, startingIndexNotIncluded);
+
+       // one argument only will return a copy from the starting index to the end of the array
+
+     */
+
+    // var pies = [
+    //     "apple",
+    //     "cherry",
+    //     "key lime",
+    //     "huckleberry",
+    //     "rhubarb"
+    // ];
+
+
+    // ** create a function that takes in an array of pies baked and return the 3
+    // most recently baked pies
+
+
+// function recentPies(pies) {
+//     return pies.slice(-3); //or (pies.length -3)
+//
+// }
+//
+// console.log(recentPies(pies));
+
+
+
+
+
+    // ============================= Sorting
+
+    // var pies = [
+    //     "huckleberry",
+    //     "apple",
+    //     "key lime",
+    //     "cherry",
+    //     "rhubarb"
+    // ];
+
+    // pies.sort(); // change the original value
+
+
+
+
+
+// how to get numbers to sort chronologically
+// var numbers = [1, 11, 2, 5];
+//
+// function compareNum(a,b) {
+//     return a-b;
+// }
+// numbers.sort(compareNum);
+// console.log(numbers);
+
+
+//     // ============================= Reversing
+//
+//     var pies = [
+//         "apple",
+//         "cherry",
+//         "key lime",
+//         "huckleberry",
+//         "rhubarb"
+//     ];
+//
+//
+// pies.reverse();
+// console.log(pies);
+//
+//     pies.reverse().sort();
+// console.log(pies)
+    // ============================= Split / Join
+
+
+    // splitting string into and array
+
+    // var names = "Bob Sally Mary";
+    // var namesArr = names.split(" ");
+    // console.log(namesArr);
+    // finds empty space and that
+    // is what splits elements
+    //
+    // var namesString = namesArr.join("");
+    // console.log(namesString);
+    //
+
+
+
+
+    // splitting on an empty string
+
+    // var everyCharacter = bondsString.split("");
+
+    // joining array into a string
+
+    // var bondsArray = ["Connery", "Lazenby", "Moore", "Dalton", "Brosnan", "Craig"];
+    // var bondsString = bondsArray.join("_");
+    //
+    //
+    // var output = "";
+    // for (var i = 0; i < bondsArray.length; i += 1) {
+    //     output += bondsArray[i];
+    //     output += ", ";
+    // }
+    //
+    // console.log(bondsString);
+
+
+
+    // ** Create a function that will take in a formatted string of numbers and return an array of phone numbers without any symbols. Console.log the output of the returned array.
+
+    /* EXAMPLE...
+
+        var phoneNumbers = '210-555-2020\n230-555-2020\n512-555-3030';
+
+        cleanPhoneNumbers(phoneNumbers);
+
+        the above code should output the following...
+
+           2105552020
+           2305552020
+           5125553030
+
+
+    */
+
+    // var phoneNumbers = '210-555-2020\n230-555-2020\n512-555-3030';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // ============================= (EXTRA INFO) Splicing Elements
+
+    /*
+
+        someArray.splice(param1, param2, param3...);
+
+        param1 = which index to start from
+        param2 = how many elements to remove
+        param3 = from this parameter and onward, arguments passed in will be added as new elements at the end of the array
+
+     */
+
+    //
+    // // create new test array
+    //     var bonds = ["Craig", "Brosnan", "Dalton", "Moore", "Connery"];
+    //
+    //
+    // // removing elements splice
+    //     var missingBonds = bonds.splice(bonds.indexOf("Moore"), 2);
+    //     console.log(bonds);
+    //     console.log(missingBonds);
+    //
+    //
+    // // adding elements with splice
+    //     bonds.splice(1, 0, "Lazenby");
+    //     console.log(bonds);
+    //
+    //
+    // // replace elements
+    //     bonds.splice(bonds.indexOf("Craig"), 1, "Elba");
+    //     console.log(bonds);
+
+</script>
+
+</body>
+</html>
