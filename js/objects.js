@@ -14,8 +14,7 @@
     var person = {
         firstName: "Nia",
         lastName: "Watson",
-        sayHello: "Hello from"
-    };
+    }
     console.log(person.firstName);
     console.log(person.lastName);
 
@@ -29,7 +28,10 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-
+person.sayHello = function sayHello() {
+    return 'Hello from ' + this.firstName + ' ' + this.lastName + '!';
+}
+console.log(person.sayHello());
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
      * more than $200. If a shopper spends more than $200, they get a 12%
@@ -44,11 +46,31 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+function currencyNum(num) {
+    return '$' + num.toFixed(2);
+}
+
+    function createShopperMessage(shopper) {
+        var discountedAmount = 0;
+        if (shopper.amount > 200) {
+            discountedAmount = shopper.amount * .12;
+        }
+        return shopper.name + ' purchased ' +
+            numToCurrency(shopper.amount) +  ' and will get ' +
+            numToCurrency(discountedAmount) + ' off the final amount to pay a total of ' +
+            numToCurrency(shopper.amount - discountedAmount);
+    }
+
+    function logShoppersMessages(shoppers) {
+        shoppers.forEach(function(shopper) {
+            console.log(createShopperMessage(shopper));
+        });
+    }
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -58,10 +80,39 @@
      * array
      *
      * Example:
-     * > console.log(books[0].title) // "The Salmon of Doubt"
+     * console.log(books[0].title) // "The Salmon of Doubt"
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+    var books = [
+        {
+            title: 'The Salmon of Doubt',
+            author: {
+                firstName: 'Douglas',
+                lastName: 'Adams'
+            }
+        },
+        {
+            title: 'Walkaway',
+            author: {
+                firstName: 'Cory',
+                lastName: 'Doctorow'
+            }
+        },
+        {
+            title: 'A Brief History of Time',
+            author: {
+                firstName: 'Stephen',
+                lastName: 'Hawking'
+            }
+        }
+    ];
+
+    console.log(books[0].title) // "The Salmon of Doubt"
+    console.log(books[0].author.firstName) // "Douglas"
+    console.log(books[0].author.lastName) // "Adams"
+
+
 
     /**
      * TODO:
@@ -87,7 +138,12 @@
      *      ---
      *      ...
      */
-
+    for (var i = 0; i < books.length; i += 1) {
+        console.log('Book # ' + (i + 1));
+        console.log('Title: ' + books[i].title);
+        console.log('Author: ' + books[i].author.firstName + ' ' + books[i].author.lastName);
+        console.log('---');
+    }
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
