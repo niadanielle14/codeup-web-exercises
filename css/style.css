@@ -2,3 +2,25 @@
     color: purple;
     text-decoration: underline;
 }
+h2 {
+    text-align: center;
+}
+h2, h3, h4, h5, h6 {
+    color: green;
+    text-decoration: underline;
+}
+body {
+    /*background-color: orange;*/
+    background-image: url("http://placeholder.pics/svg/30");
+    font-style: italic;
+}
+ul, ol {
+    color: lightpink;
+}
+table {
+    color: lightcoral;
+    font-size: 30px;
+}
+a:hover {
+    color:blue;
+}
