@@ -17,19 +17,19 @@ div {
 }
 .message-info {
     color: darkblue;
-    background-color: lightblue;
+    background-color: #3e97dc;
 }
 .message-success {
     color: darkgreen;
     background-color: lightgreen;
 }
 .message-warning {
-    color: yellow;
+    color: #dabe12;
     background-color: lightyellow;
 }
 .message-error {
     color: darkred;
-    background-color: red;
+    background-color: #ea8d8d;
 }
 
 
