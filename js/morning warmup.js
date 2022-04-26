@@ -26,8 +26,8 @@ function multiplyByTen(number) {
 function randomNumber(input) {
     return math.random(input,0);
 }
-function alphaBackwards(input) {
-    return input.reverse();
+function alphaBackwards("") {
+    return string.split("").sort().join("");
 }
 
 console.log(alphaBackwards("apples"));
