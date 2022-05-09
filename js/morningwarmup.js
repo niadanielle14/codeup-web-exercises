@@ -142,3 +142,20 @@ returnMostExpensiveProductObjectInStock(products)
 returnLeastExpensiveProductObjectInStock(products)
 returnAveragePriceOfAllProductsInStock(products)
 returnProductObjectsNotInStock(products)
+
+
+// Write a function that accepts an array of numbers and returns the average.
+
+
+function returnAverage (array) {
+    var total = 0;
+    for(var i = 0; i < array.length; i++)
+        total += array[i];
+    return total / array.length;
+}
+
+console.log(returnAverage(3, 5, 7, 9));
+
+    Test inputs:
+    [3, 5, 7, 10, 0]
+        [0, 3, 5, 6, 21]
