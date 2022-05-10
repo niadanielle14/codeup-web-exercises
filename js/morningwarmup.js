@@ -147,15 +147,33 @@ returnProductObjectsNotInStock(products)
 // Write a function that accepts an array of numbers and returns the average.
 
 
-function returnAverage (array) {
-    var total = 0;
-    for(var i = 0; i < array.length; i++)
-        total += array[i];
-    return total / array.length;
+// function returnAverage (array) {
+//     var total = 0;
+//     for(var i = 0; i < array.length; i++)
+//         total += array[i];
+//     return total / array.length;
+// }
+//
+// console.log(returnAverage(3, 5, 7, 9));
+//
+//     Test inputs:
+//     [3, 5, 7, 10, 0]
+//         [0, 3, 5, 6, 21]
+
+let classes = [
+    {class: "6th grade history", students: 18},
+    {class: "7th grade history", students: 20},
+    {class: "8th grade history", students: 22}
+];
+
+// Write a function, calculateTotalStudents, that returns the total number of students recorded in the classes array.
+
+function calculateTotalStudents(arrayOfObjects) {
+    var totalStudents = 0;
+    for(var i = 0; i < classes.length; i++ ) {
+        totalStudents += classes[i].students;
+    }
+        return totalStudents;
 }
-
-console.log(returnAverage(3, 5, 7, 9));
-
-    Test inputs:
-    [3, 5, 7, 10, 0]
-        [0, 3, 5, 6, 21]
+console.log(calculateTotalStudents())
+// Bonus: instead of the total students, return the highest number of students in any class
