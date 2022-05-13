@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <h1>I am a Header, I'm probably important</h1>
+</header>
+
+<main>
+
+    <a href="#" id="pageLink">Link to nowhere</a>
+
+    <ul id="list">
+        <li class="codeup">Item 1</li>
+        <li class="codeup">Item 2</li>
+        <li class="codeup">Item 3</li>
+        <li class="codeup">Item 4</li>
+        <li>Item 5</li>
+    </ul>
+
+    <div id="codeup">
+        <br>
+    </div>
+    <p class="latin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, consectetur ex fugiat nemo nesciunt voluptatem!</p>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous"></script>
+<script>
+    // 3
+    // alert($("#pageLink").html());
+    // 4
+    // alert($("#list").html());
+
+
+    // Class Selectors
+    // 3
+    $('.codeup').css("border", "1px solid red");
+
+    // Element Selectors
+    // 2
+    $('li').css("font-size", "20px");
+    // 3
+    // $('p')
+    // $('h1')
+    // $('li')
+    // 4
+    alert($('h1').html());
+
+    // Multiple Selectors
+    // 1
+    $('p, h1, li');
+
+</script>
+</body>
+</html>

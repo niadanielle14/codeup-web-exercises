@@ -160,20 +160,29 @@ returnProductObjectsNotInStock(products)
 //     [3, 5, 7, 10, 0]
 //         [0, 3, 5, 6, 21]
 
-let classes = [
-    {class: "6th grade history", students: 18},
-    {class: "7th grade history", students: 20},
-    {class: "8th grade history", students: 22}
-];
+// let classes = [
+//     {class: "6th grade history", students: 18},
+//     {class: "7th grade history", students: 20},
+//     {class: "8th grade history", students: 22}
+// ];
+//
+// // Write a function, calculateTotalStudents, that returns the total number of students recorded in the classes array.
+//
+// function calculateTotalStudents(arrayOfObjects) {
+//     var totalStudents = 0;
+//     for(var i = 0; i < classes.length; i++ ) {
+//         totalStudents += classes[i].students;
+//     }
+//         return totalStudents;
+// }
+// console.log(calculateTotalStudents())
+// // Bonus: instead of the total students, return the highest number of students in any class
 
-// Write a function, calculateTotalStudents, that returns the total number of students recorded in the classes array.
+// Write a function called convertToObject that takes in a string that is the name of a class, and a number that is the number of students, and returns an object with the properties `class` and `students`
 
-function calculateTotalStudents(arrayOfObjects) {
-    var totalStudents = 0;
-    for(var i = 0; i < classes.length; i++ ) {
-        totalStudents += classes[i].students;
-    }
-        return totalStudents;
+//convertToObject("Intro to Programming", 20) returns {class: "Intro to Programming", students: 20}
+
+function convertToObject(string, number) {
+    return {class:string, number: number};
 }
-console.log(calculateTotalStudents())
-// Bonus: instead of the total students, return the highest number of students in any class
+
