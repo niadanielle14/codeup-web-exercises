@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Jquery Exercise</title>
 </head>
 <body>
 <header>
@@ -18,42 +18,74 @@
         <li class="codeup">Item 2</li>
         <li class="codeup">Item 3</li>
         <li class="codeup">Item 4</li>
-        <li>Item 5</li>
+        <li class="codeup">Item 5</li>
     </ul>
 
-    <div id="codeup">
-        <br>
-    </div>
-    <p class="latin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, consectetur ex fugiat nemo nesciunt voluptatem!</p>
+    <div id="app"></div>
+    <p class="'latin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, maxime, nemo. Accusamus animi asperiores at autem ducimus eius et eum in magni natus nesciunt nulla optio placeat quos, repudiandae voluptas?</p>
 </main>
 
-<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<!--- custom css goes BELOW CDN !>-->
 <script>
-    // 3
-    // alert($("#pageLink").html());
-    // 4
-    // alert($("#list").html());
+
+    // $(document).ready(function(){
+    //     --work starts here--
+    //     alert($("#pageLink").html());
+    //     Change content
+    //     alert($("#list").html());
+    //
+    //     /class selectors
+    //     $('.codeup').css('border', '1px solid red');
+    // When removing last class border was removed from last list
+    // the other element did not get a border because we are targeting classes and not an ID
+
+    //     element selectors
+    //     $('li').css('font-size', '20px')
+    //     $('p')
+    //     $('h1')
+    //     $('li')
+    //     alert($('h1').html());
+    //
+    //     Multiple Selectors
+    //     $('p, h1, li');
+    //
+    //
+    //
+    //
+    //     alert("Ready");
+    // }());
+
+    // --- Mouse events ----
+    // Remove your custom jQuery code from previous exercises.
+
+    // Add jQuery code that will change the background color of an h1 element when clicked.
+    $('h1').click(function (e) {
+        e.target.style.backgroundColor = 'red';
+    });
+
+    // Make all paragraphs have a font size of 18px when they are double clicked.
+    $("p").dblclick(function (e) {
+        e.target.style.fontsize = "18px"
+    });
+
+    // Set all li text color to red when the mouse is hovering; reset to black when it is not.
+    function hoverIn () {
+        //color to red when hovered over
+        e.target.style.color = "red";
+    }
+
+    function hoverOut () {
+        //reset to black when not hovering
+        e.target.style.color = "black";
+    }
+
+    $("li").hover(hoverIn, hoverOut)
 
 
-    // Class Selectors
-    // 3
-    $('.codeup').css("border", "1px solid red");
 
-    // Element Selectors
-    // 2
-    $('li').css("font-size", "20px");
-    // 3
-    // $('p')
-    // $('h1')
-    // $('li')
-    // 4
-    alert($('h1').html());
-
-    // Multiple Selectors
-    // 1
-    $('p, h1, li');
 
 </script>
+
 </body>
 </html>
