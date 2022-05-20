@@ -2,21 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<!--    Weather Map CSS-->
+    <link rel="stylesheet" type="text/css" href="css/weather-map.css"/>
+    <!--    Mapbox-->
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+<!--  // JQuery-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!--    // Keys JS-->
     <script src="js/keys.js"></script>
+<!--    // Weather-Map JS-->
     <script src="js/weather-map.js"></script>
     <title>Weather Maps</title>
 </head>
 <body>
+
+<div id="current-weather"></div>
+<div id="forcast"></div>
 <div id='map' class="mx-auto mt-4"></div>
 <script>
     mapboxgl.accessToken = MAPBOX_API_TOKEN;
     const map = new mapboxgl.Map({
     container: 'map', // container ID
     style: 'mapbox://styles/mapbox/streets-v11', // style URL
-    center: [-74.5, 40], // starting position [lng, lat]
+    center: [-97.17603710934053, 32.64185143783661], // starting position [lng, lat]
     zoom: 9 // starting zoom
     });
 </script>
