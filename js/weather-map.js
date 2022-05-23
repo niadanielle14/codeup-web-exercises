@@ -11,15 +11,21 @@ $.get("http://api.openweathermap.org/data/2.5/onecall", {
     data.daily.forEach(function (dailyForcast, index){
         if (index < 5 ){
             console.log(new Date(dailyForcast.dt*1000));
-            console.log(dailyForcast)
-            $("#forcast").append("<p>" + new Date(dailyForcast.dt*1000) + "</p>")
-            $("#forcast").append("<p>" + dailyForcast.temp.max + "</p>")
-
+            console.log(dailyForcast.temp.max)
+            console.log(dailyForcast.humidity)
+            console.log(dailyForcast.pressure)
+            console.log(dailyForcast.wind_speed)
+            $("#forcast").append("<p>" + new Date(dailyForcast.dt*1000) + "</p>") // Current Date & Time Display
+            $("#forcast").append("<p> Temperature: " + dailyForcast.temp.max + "</p>") // Max Temp Display
+            $("#forcast").append("<p> Humidity: " + dailyForcast.humidity + "% </p>") // Humidity Display
+            $("#forcast").append("<p> Pressure: " + dailyForcast.pressure + "</p>") // Pressure Display
+            $("#forcast").append("<p> Wind: " + dailyForcast.wind_speed + " mph</p>") // WindSpeed Display
         }
 
         let current_datetime = new Date()
         console.log(current_datetime.toString())
+
+
     })
-    data.daily.forEach(function (dailyHumidity,index)
-    )
+
 });
