@@ -18,6 +18,7 @@ $.get("http://api.openweathermap.org/data/2.5/onecall", {
 
             var html = '<div class="col card" >';
             html += "<p>" + new Date(dailyForcast.dt*1000) + "</p>";
+            html += "<p><img src='http://openweathermap.org/img/wn/" + dailyForcast.weather[0].icon + "@2x.png'></p>"
             html += "<p> Temperature: " + dailyForcast.temp.max + " °F</p>"
             html += "<p> Description: " + dailyForcast.weather[0].description + " </p>"
             html += "<p> Humidity: " + dailyForcast.humidity + "% </p>"
