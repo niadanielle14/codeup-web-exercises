@@ -18,12 +18,21 @@
     <title>Weather Maps</title>
 </head>
 <body>
-<div class="searchbar">
-    <input type="text" placeholder="Your next adventure awaits...">
-    <button id="searchbtn">Go!</button>
+<!--NavBar Search Button -->
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Adventures await..." aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<!--<div id="current-weather"></div>-->
+<h6>5 Day Forcast</h6>
+<div class="container">
+    <div id="forcast" class="row"></div>
+
 </div>
-<div id="current-weather"></div>
-<div id="forcast"></div>
 <div id='map' class="mx-auto mt-4"></div>
 <script>
     mapboxgl.accessToken = MAPBOX_API_TOKEN;
