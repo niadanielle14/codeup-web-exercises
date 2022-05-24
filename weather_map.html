@@ -27,11 +27,13 @@
         </form>
     </div>
 </nav>
-<!--<div id="current-weather"></div>-->
-<h6>5 Day Forcast</h6>
+<div class="container">
+    <div id="current-weather" class="row"></div>
+</div>
+
+<h2>5 Day Forcast</h2>
 <div class="container">
     <div id="forcast" class="row"></div>
-
 </div>
 <div id='map' class="mx-auto mt-4"></div>
 <script>
@@ -42,6 +44,13 @@
     center: [-97.17603710934053, 32.64185143783661], // starting position [lng, lat]
     zoom: 9 // starting zoom
     });
+    // Set marker options.
+    const marker = new mapboxgl.Marker({
+        color: "#CBC3E3",
+        draggable: true
+    }).setLngLat([-97.17603710934053, 32.64185143783661])
+        .addTo(map);
+
 </script>
 </body>
 </html>
