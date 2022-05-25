@@ -37,112 +37,112 @@
 
 // Create a function, createNumObject, that takes in two numbers and returns an object with the following properties:
 
-function createNumObject(num1, num2) {
-    if (num1 === num2) {
-        return {
-            lowest: num1,
-            highest: num2
-        }
-    } else if (num1 > num2) {
-        return {
-            lowest: num2,
-            highest: num1
-        }
-    } else {
-        return {
-            lowest: num1,
-            highest: num2
-        }
-    }
-}
-
-
-console.log(createNumObject(1, 2), {lowest: 1, highest: 2});
-console.log(createNumObject(5, 2), {lowest: 2, highest: 5});
-console.log(createNumObject(5, 5), {lowest: 5, highest: 5});
-
-
-    // lowest: LOWEST_NUMBER_HERE,
-    //     highest: HIGHEST_NUMBER_HERE
+// function createNumObject(num1, num2) {
+//     if (num1 === num2) {
+//         return {
+//             lowest: num1,
+//             highest: num2
+//         }
+//     } else if (num1 > num2) {
+//         return {
+//             lowest: num2,
+//             highest: num1
+//         }
+//     } else {
+//         return {
+//             lowest: num1,
+//             highest: num2
+//         }
+//     }
 // }
-
-// Assume both inputs are number data types. The first argument may or may not be higher than the second argument. If both number inputs are equal, return the same object but with the same number value for both the lowest and highest property values.
 //
 //
-//     EXAMPLES...
-
-
-// console.log(createNumObject(1, 3), {lowest: 1, highest: 3}); // returns...
-
-/*
-  {
-    lowest: 1,
-    highest: 3
-  }
-*/
-
-// createNumObject(10, 5) // returns...
-
-/*
-  {
-    lowest: 5,
-    highest: 10
-  }
-*/
-
-// createNumObject(7, 7) // returns...
-
-/*
-  {
-    lowest: 7,
-    highest: 7
-  }
-*/
-
-// ================================= WARM UP
+// console.log(createNumObject(1, 2), {lowest: 1, highest: 2});
+// console.log(createNumObject(5, 2), {lowest: 2, highest: 5});
+// console.log(createNumObject(5, 5), {lowest: 5, highest: 5});
 //
-// Consider an array of product objects:
-
-    const products = [
-        {
-            name: 'Hammer',
-            priceInCents: 4500,
-            isInStock: true
-        },
-        {
-            name: 'Computer',
-            priceInCents: 45000,
-            isInStock: true
-        },
-        {
-            name: 'Water Bottle',
-            priceInCents: 3300,
-            isInStock: true
-        },
-        {
-            name: 'Car',
-            priceInCents: 990000,
-            isInStock: true
-        },
-        {
-            name: 'Cup',
-            priceInCents: 230,
-            isInStock: false
-        },
-        {
-            name: 'Book',
-            priceInCents: 540,
-            isInStock: false
-        },
-    ];
-
-Create the following functions that take in an array of product objects and return various values:
-
-returnMostExpensiveProductObjectInStock(products)
-returnLeastExpensiveProductObjectInStock(products)
-returnAveragePriceOfAllProductsInStock(products)
-returnProductObjectsNotInStock(products)
-
+//
+//     // lowest: LOWEST_NUMBER_HERE,
+//     //     highest: HIGHEST_NUMBER_HERE
+// // }
+//
+// // Assume both inputs are number data types. The first argument may or may not be higher than the second argument. If both number inputs are equal, return the same object but with the same number value for both the lowest and highest property values.
+// //
+// //
+// //     EXAMPLES...
+//
+//
+// // console.log(createNumObject(1, 3), {lowest: 1, highest: 3}); // returns...
+//
+// /*
+//   {
+//     lowest: 1,
+//     highest: 3
+//   }
+// */
+//
+// // createNumObject(10, 5) // returns...
+//
+// /*
+//   {
+//     lowest: 5,
+//     highest: 10
+//   }
+// */
+//
+// // createNumObject(7, 7) // returns...
+//
+// /*
+//   {
+//     lowest: 7,
+//     highest: 7
+//   }
+// */
+//
+// // ================================= WARM UP
+// //
+// // Consider an array of product objects:
+//
+//     const products = [
+//         {
+//             name: 'Hammer',
+//             priceInCents: 4500,
+//             isInStock: true
+//         },
+//         {
+//             name: 'Computer',
+//             priceInCents: 45000,
+//             isInStock: true
+//         },
+//         {
+//             name: 'Water Bottle',
+//             priceInCents: 3300,
+//             isInStock: true
+//         },
+//         {
+//             name: 'Car',
+//             priceInCents: 990000,
+//             isInStock: true
+//         },
+//         {
+//             name: 'Cup',
+//             priceInCents: 230,
+//             isInStock: false
+//         },
+//         {
+//             name: 'Book',
+//             priceInCents: 540,
+//             isInStock: false
+//         },
+//     ];
+//
+// Create the following functions that take in an array of product objects and return various values:
+//
+// returnMostExpensiveProductObjectInStock(products)
+// returnLeastExpensiveProductObjectInStock(products)
+// returnAveragePriceOfAllProductsInStock(products)
+// returnProductObjectsNotInStock(products)
+//
 
 // Write a function that accepts an array of numbers and returns the average.
 
@@ -182,7 +182,13 @@ returnProductObjectsNotInStock(products)
 
 //convertToObject("Intro to Programming", 20) returns {class: "Intro to Programming", students: 20}
 
-function convertToObject(string, number) {
-    return {class:string, number: number};
-}
+// function convertToObject(string, number) {
+//     return {class:string, number: number};
+// }
 
+// / TODO: Write an arrow function named "highFive" which accepts a string and alerts the user's input, asking for a high five.
+// Example: highFive("Go") returns "Go, high five!"
+
+const highFive = (str) => alert(`${str}, high Five`);
+
+highFive("go")
