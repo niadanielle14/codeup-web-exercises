@@ -6,7 +6,7 @@
 </head>
 <body>
 <header>
-    <h1>I am a Header, I'm probably important</h1>
+    <h1> I am a Header, I'm probably important</h1>
 </header>
 <main>
     <a href="#" id="pageLink">Link to nowhere</a>
@@ -20,10 +20,36 @@
     </ul>
 
     <div id="app"></div>
-    <p class="'latin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, maxime, nemo. Accusamus animi asperiores at autem ducimus eius et eum in magni natus nesciunt nulla optio placeat quos, repudiandae voluptas?</p>
+    <p class="latin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, maxime, nemo. Accusamus animi asperiores at autem ducimus eius et eum in magni natus nesciunt nulla optio placeat quos, repudiandae voluptas?</p>
 </main>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
+<script>
+    //3 Sends alert connecting to the page link. Must use # because it is an id.
+    alert($("#pageLink").html());
+    //4 Sends alert connecting to the unordered list
+    alert($("#list").html());
+    //5 When two elements have the same id, only the first id will display in the  alert.
+
+    // Class Selectors - must use a . because it is a class
+    // 3 create a border around all elements with the class codeup that is 1 pixel wide and red.
+    $('.codeup').css("border", "1px solid red");
+
+    // Element Selectors - doesn't need an indicator
+    // 2 set the font-size of all li elements to 20px.
+    $('li').css("font-size", "20px");
+    // 3 highlight all the h1, p, and li elements.
+    $('h1')
+    $('p')
+    $('li')
+
+    // 4 alert the contents of your h1 element(s).
+    alert($('h1').html());
+
+    // Multiple Selectors
+    $('h1, p, li');
+
+</script>
 </body>
 </html>
