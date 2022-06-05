@@ -26,29 +26,49 @@
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 <script>
-    //3 Sends alert connecting to the page link. Must use # because it is an id.
-    alert($("#pageLink").html());
-    //4 Sends alert connecting to the unordered list
-    alert($("#list").html());
-    //5 When two elements have the same id, only the first id will display in the  alert.
+    // "use strict";
 
-    // Class Selectors - must use a . because it is a class
-    // 3 create a border around all elements with the class codeup that is 1 pixel wide and red.
-    $('.codeup').css("border", "1px solid red");
+    // //3 Sends alert connecting to the page link. Must use # because it is an id.
+    // alert($("#pageLink").html());
+    // //4 Sends alert connecting to the unordered list
+    // alert($("#list").html());
+    // //5 When two elements have the same id, only the first id will display in the  alert.
+    //
+    // // Class Selectors - must use a . because it is a class
+    // // 3 create a border around all elements with the class codeup that is 1 pixel wide and red.
+    // $('.codeup').css("border", "1px solid red");
+    //
+    // // Element Selectors - doesn't need an indicator
+    // // 2 set the font-size of all li elements to 20px.
+    // $('li').css("font-size", "20px");
+    // // 3 highlight all the h1, p, and li elements.
+    // $('h1').css("background-color", "yellow")
+    // $('p').css("background-color", "yellow")
+    // $('li').css("background-color", "yellow")
+    //
+    // // 4 alert the contents of your h1 element(s).
+    // alert($('h1').html());
+    //
+    //
+    // // How to display the index of the header element in an alert
+    // var h1Elements = $("h1");
+    //
+    // function getH1Elements(index, element) {
+    //     alert(index + $(element).html())
+    // }
+    //
+    // h1Elements.each(getH1Elements)
+    //
+    //
+    // // Multiple Selectors
+    // $('h1, p, li').css("background-color","yellow")
 
-    // Element Selectors - doesn't need an indicator
-    // 2 set the font-size of all li elements to 20px.
-    $('li').css("font-size", "20px");
-    // 3 highlight all the h1, p, and li elements.
-    $('h1')
-    $('p')
-    $('li')
-
-    // 4 alert the contents of your h1 element(s).
-    alert($('h1').html());
-
-    // Multiple Selectors
-    $('h1, p, li');
+    // Mouse Events
+    // 1. Add jQuery code that will change the background color of an h1 element when clicked.
+    //
+    // 2. Make all paragraphs have a font size of 18px when they are double clicked.
+    //
+    // 3. Set all li text color to red when the mouse is hovering; reset to black when it is not.
 
 </script>
 </body>
