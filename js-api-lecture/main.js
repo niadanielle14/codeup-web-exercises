@@ -1,7 +1,7 @@
-import { mapUserToRecord } from "./maps.js";
-import {baseURL, fetchSettings} from "./constants.js";
-import {handleDisplayUpdate, handleDeleteView, toggleModal, modal, handleDisplayProfile} from "./handlers.js";
-import {users} from "./temp.js";
+// import { mapUserToRecord } from "./maps.js";
+// import {baseURL, fetchSettings} from "./constants.js";
+// import {handleDisplayUpdate, handleDeleteView, toggleModal, modal, handleDisplayProfile} from "./handlers.js";
+// import {users} from "./temp.js";
 
 
 // LECTURE: Restful API's
@@ -39,3 +39,6 @@ import {users} from "./temp.js";
 // TODO: Add in Fetch to get the users
 // TODO: Add Handlers to events
 
+let myOutput = `${originalString} is an example of ${description} thinking.`;
+
+console.log(myOutput);

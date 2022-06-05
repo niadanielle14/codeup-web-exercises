@@ -87,3 +87,5 @@ export const mapButtonsForUpdate = (id,  type='update') => {
   
     `
 }
+
+const sayHello = (name) => { 'Hello, ' + name + '!' }
