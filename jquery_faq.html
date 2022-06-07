@@ -57,6 +57,15 @@
         $('dd').toggleClass('invisible');
       });
 
+      $("h3").on('click', function(){
+        $(this).next().children().css("font-weight", "bold");
+      });
+
+      $("li").on('click', function(){
+        // $(this).parent().children().first().css("color", "blue");
+        $(this).siblings().first().css("color", "blue");
+      });
+
     });
 
   </script>
