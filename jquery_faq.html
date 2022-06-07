@@ -2,8 +2,9 @@
 <html>
 <head>
   <title>National Park FAQ's</title>
-  <style>.invisible {
-    visibility: hidden;
+  <style>
+    .invisible {
+      visibility: hidden;
   }
   </style>
 </head>
@@ -52,7 +53,7 @@
       "use strict";
 
       // TODO: add jQuery such that when the link is clicked, the visibility of the dd elements will be toggled
-      $('#toggle-answers').click(function () {
+      $('#toggle-answers').on("click", function () {
         $('dd').toggleClass('invisible');
       });
 
